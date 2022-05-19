@@ -17,9 +17,9 @@ const Header = () => {
     return (
     <nav className="relative container mx-auto p-6">
       <div className='flex items-center justify-between'>
-      <div className='pt-2'>
+      <Link to= '/' className='pt-2'>
         <img src ={ logo } alt='' />
-      </div>
+      </Link>
       <div className='hidden md:flex'>
        <div className='flex justify-center md:justify-start'> 
        <Link to="/prompt" className='p-2 outline outline-1 px-5 text-sm pt-2 font-normal rounded text-[#0865FF] bg-transparent
@@ -28,10 +28,10 @@ const Header = () => {
       </Link>
         </div>
         <div className='flex justify-center md:justify-start'> 
-       <a className='p-2 outline outline-1 px-5 text-sm pt-2 font-normal rounded mx-2 text-white bg-[#0865FF]
+       <Link to = '/prompt' className='p-2 outline outline-1 px-5 text-sm pt-2 font-normal rounded mx-2 text-white bg-[#0865FF]
       baseline hover:bg-blue-400'>
         Get Started
-      </a>
+      </Link>
         </div>
         </div>
 {/**/}
@@ -46,8 +46,8 @@ const Header = () => {
           <div id='menu' className='absolute flex-col items-center hidden self-end
           py-8 mt- 10 space-y-6 font-bold bg-white sm:w-auto
           sm:self-center left-6 right-6 drop-shadow-md'>
-        <a href='/' className='hover:text-darkGrayishBlue'>Merchant Login</a>
-        <a href='/' className='hover:text-darkGrayishBlue'>Get Started</a>
+        <Link to='/' className='hover:text-darkGrayishBlue'>Merchant Login</Link>
+        <Link to='/' className='hover:text-darkGrayishBlue'>Get Started</Link>
           </div>
         </div>
   </nav>
